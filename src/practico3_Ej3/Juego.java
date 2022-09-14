@@ -28,8 +28,8 @@ public class Juego {
 	}
 	
 	public void jugar() {
-		ArrayList <Personaje> mazoj1 = j1.getMazoPersonajes();
-		ArrayList <Personaje> mazoj2 = j2.getMazoPersonajes();
+		ArrayList <Personaje> mazoj1 = j1.getCopiaMazoPersonajes();
+		ArrayList <Personaje> mazoj2 = j2.getCopiaMazoPersonajes();
 		System.out.println("");
 		System.out.println("Empieza el juego, gana la carta con mayor fuerza");
 		System.out.println("");
@@ -109,8 +109,8 @@ public class Juego {
 		juegoDeCartas.addPersonajesRandomAMazoJugador(j1);
 		juegoDeCartas.addPersonajesRandomAMazoJugador(j2);
 		
-		ArrayList <Personaje> mazoj1 = j1.getMazoPersonajes();
-		ArrayList <Personaje> mazoj2 = j2.getMazoPersonajes();
+		ArrayList <Personaje> mazoj1 = j1.getCopiaMazoPersonajes();
+		ArrayList <Personaje> mazoj2 = j2.getCopiaMazoPersonajes();
 		
 		
 		System.out.println("Mazo jugador1 : ");

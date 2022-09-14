@@ -29,8 +29,9 @@ public class Jugador {
 		mazoPersonajes.add(p);
 	}
 
-	public ArrayList<Personaje> getMazoPersonajes() {
-		return mazoPersonajes;
+	public ArrayList<Personaje> getCopiaMazoPersonajes() {
+		ArrayList<Personaje> mazoCopiaPersonajes = mazoPersonajes;
+		return mazoCopiaPersonajes;
 	}
 	
 	
