@@ -11,7 +11,7 @@ public class CasaEnemistada extends Casa {
 	@Override
 	public boolean checkAlumnoEsApto(Alumno a) {
 		if(super.checkAlumnoEsApto(a)) {
-			if(this.casaEnemiga.equals(a.getCasa())==false) { //Si el alumno ya pertenece a la casa enemiga no podra entrar
+			if(this.casaEnemiga.equals(a.getCasa())==false) { //devuelve true si el alumno no pertenece a la casa enemiga.
 				return true;
 			}
 		}
