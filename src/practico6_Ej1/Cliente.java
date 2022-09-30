@@ -9,6 +9,8 @@ public class Cliente {
 		this.dni = dni;
 	}
 	
-	
+	public String toString() {
+		return this.nombre + "  " + this.dni;
+	}
 	
 }

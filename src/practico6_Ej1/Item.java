@@ -8,4 +8,8 @@ public abstract class Item {
 	}
 	
 	public abstract boolean puedeAlquilarse();
+	
+	public abstract void ponerEnAlquiler();
+	
+	public abstract void itemDevuelto();
 }

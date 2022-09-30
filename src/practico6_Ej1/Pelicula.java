@@ -13,16 +13,29 @@ public class Pelicula extends Item {
 	@Override
 	public boolean puedeAlquilarse() {
 		if(this.cantCopias > 0) {
-			this.restarPeliculaCantCopias();
 			return true;
 		}
 		else {
 			return false;
 		}
 	}
-	
-	public void restarPeliculaCantCopias() {
+
+	public void ponerEnAlquiler() {
 		this.cantCopias--;
+	}
+
+	@Override
+	public void itemDevuelto() {
+		this.cantCopias++;	
+	}
+	
+	
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public int getCantCopias() {
+		return cantCopias;
 	}
 	
 	
