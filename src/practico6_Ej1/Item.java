@@ -1,10 +1,16 @@
 package practico6_Ej1;
 
 public abstract class Item {
-	private static int idItem;
+	private static int staticId = 1;
+	private int idItem;
 	
 	public Item() {
-		this.idItem++;
+		this.idItem = staticId;
+		staticId++;
+	}
+	
+	public int getIdItem() {
+		return idItem;
 	}
 	
 	public abstract boolean puedeAlquilarse();

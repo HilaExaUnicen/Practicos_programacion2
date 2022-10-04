@@ -31,6 +31,7 @@ public class MainVideoClub {
 		videoClub.addAlquiler(alq3);
 		videoClub.addAlquiler(alq4);
 		
+		
 		System.out.println(pel2.getCantCopias());
 		alq1.clienteDevuelveItem();
 		System.out.println(pel2.getCantCopias());	
