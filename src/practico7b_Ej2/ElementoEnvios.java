@@ -1,16 +1,11 @@
 package practico7b_Ej2;
 
 public abstract class ElementoEnvios {
-	private String trackingID, destinatario, remitente, direccionDestino, ciudadDestino;
-	private double peso;
+	private String trackingID, ciudadDestino;
 	
-	public ElementoEnvios(String trackingID, String destinatario, String remitente, String direccionDestino,String ciudadDestino, double peso) {
+	public ElementoEnvios(String trackingID, String ciudadDestino) {
 		this.trackingID = trackingID;
-		this.destinatario = destinatario;
-		this.remitente = remitente;
-		this.direccionDestino = direccionDestino;
 		this.ciudadDestino = ciudadDestino;
-		this.peso = peso;
 	}
 
 	public String getTrackingID() {
@@ -20,12 +15,18 @@ public abstract class ElementoEnvios {
 	public void setTrackingID(String trackingID) {
 		this.trackingID = trackingID;
 	}
-	
+
 	public String getCiudadDestino() {
 		return ciudadDestino;
 	}
-
-	public abstract String getDestinatario(); 
+	
+	public abstract double getPeso();
+	public abstract String getDestinatario();
+	public abstract String getRemitente();
+	public abstract String getDireccionDestino();
+	
+	
+	
 	
 	
 }
