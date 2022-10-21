@@ -6,7 +6,6 @@ import java.util.Comparator;
 
 public class ClubFutbol5 {
 	private ArrayList<Socio> socios;
-	private static final int mayoriaDeEdad = 18;
 	
 	public ClubFutbol5() {
 		this.socios = new ArrayList<>();
