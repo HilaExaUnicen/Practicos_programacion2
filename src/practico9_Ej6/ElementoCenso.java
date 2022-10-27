@@ -10,8 +10,12 @@ public abstract class ElementoCenso {
 		this.nombre = nombre;
 	}
 	
+	public String getNombre() {
+		return nombre;
+	}
+	
 	public abstract int getSuperficie();
-	public abstract int cantHabitantes();
+	public abstract int getCantHabitantes();
 	public abstract double getMontoTotalIngresos();
 	public abstract double getIngresosPerCapita();
 	public abstract double getDensidadDePoblacion();

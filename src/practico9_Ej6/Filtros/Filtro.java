@@ -1,5 +1,7 @@
 package practico9_Ej6.Filtros;
 
-public abstract class Filtro {
+import practico9_Ej6.Comarca;
 
+public abstract class Filtro {
+	public abstract boolean cumpleCondicion(Comarca c);
 }
