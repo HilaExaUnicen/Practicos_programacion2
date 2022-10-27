@@ -68,6 +68,13 @@ public class Socio {
 		
 		return false;
 	}
+
+	@Override
+	public String toString() {
+		return "Socio [nombre=" + nombre + ", apellido=" + apellido + "]";
+	}
+	
+	
 	
 	
 }
