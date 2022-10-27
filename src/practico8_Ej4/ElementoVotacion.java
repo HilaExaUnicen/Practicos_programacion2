@@ -6,9 +6,9 @@ public abstract class ElementoVotacion {
 	public abstract int getCantTotalVotos();
 	
 	public double getPorcentajeVotosPor(Filtro f) {
-		int cantVotosPorCondicion = this.getCantVotosPor(f);
-		int cantTotalVotos = this.getCantTotalVotos();
-		
-		return ((cantVotosPorCondicion / cantTotalVotos) * 100);
+		double cantVotosPorCondicion = this.getCantVotosPor(f);
+		double cantTotalVotos = this.getCantTotalVotos();
+		double resultado = (cantVotosPorCondicion/cantTotalVotos) * 100;
+		return resultado;
 	}
 }

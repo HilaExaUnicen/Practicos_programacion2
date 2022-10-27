@@ -5,11 +5,9 @@ import java.util.Collections;
 
 public class SistemaEleccion {
 	ArrayList<Candidato> candidatos;
-	ArrayList<Localidad> localidades;
 	
 	public SistemaEleccion() {
 		this.candidatos = new ArrayList<>();
-		this.localidades = new ArrayList<>();
 	}
 	
 	public void addCandidato(Candidato c) {
@@ -17,7 +15,7 @@ public class SistemaEleccion {
 			candidatos.add(c);
 		}
 	}
-	
+
 	public ArrayList<Candidato> getCandidatos(){
 		ArrayList<Candidato> resultado = candidatos;
 		
@@ -26,8 +24,4 @@ public class SistemaEleccion {
 		return resultado;
 	}
 	
-//	public int getCantTotalVotos() {
-//		int sumadorCantTotal = 0;
-//		return sumadorCantTotal;
-//	}
 }

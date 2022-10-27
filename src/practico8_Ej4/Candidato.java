@@ -32,6 +32,10 @@ public class Candidato {
 		}
 	}
 	
+	public String toString() {
+		return this.nombre + "  PartidoPolitico: " + this.partidoPolitico; 
+	}
+	
 	
 	
 }

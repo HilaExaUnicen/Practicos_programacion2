@@ -2,26 +2,15 @@ package practico8_Ej4;
 
 import java.util.ArrayList;
 
-public class Localidad extends ElementoVotacion {
+public class SeccionElectoral extends ElementoVotacion {
+	private ArrayList<ElementoVotacion> elementosTerritoriales;
 	
-	protected ArrayList<ElementoVotacion> elementosTerritoriales;  // Los elementos territoriales en el caso de la localidad van a ser barrios, en el caso de los barrios establecimientos, etc
-	protected MesaVotacion mesaVotacionEspecial;	 
-	
-	public Localidad() {
+	public SeccionElectoral() {
 		this.elementosTerritoriales = new ArrayList<>();
-		this.mesaVotacionEspecial = new MesaVotacion();
 	}
 	
-	public void addBarrio(Barrio b) {
-		elementosTerritoriales.add(b);
-	}
-	
-	public void addVotanteAMesaEspecial(Votante votante) {
-		mesaVotacionEspecial.addVotanteAMesa(votante);
-	}
-	
-	public void addVotoAMesaEspecial(Voto voto) {
-		mesaVotacionEspecial.addVoto(voto);
+	public void addElemento(ElementoVotacion ev) { //El elemento a agregar puede ser un barrio, establecimiento o mesa de votacion;
+		elementosTerritoriales.add(ev);
 	}
 	
 	@Override

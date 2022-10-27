@@ -1,10 +1,10 @@
 package practico8_Ej4;
 
-import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class FiltroVotosDespuesDeDeterminadoHorario extends Filtro {
 
-	private LocalDate horarioBuscado;
+	private LocalTime horarioBuscado;
 	
 	@Override
 	public boolean cumpleCondicion(Voto voto) {

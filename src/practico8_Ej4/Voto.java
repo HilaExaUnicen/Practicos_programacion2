@@ -1,14 +1,14 @@
 package practico8_Ej4;
 
-import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class Voto {
 	private Candidato candidatoVotado;
 	private Votante personaQueEmitioElVoto;
-	private LocalDate horaVotoFueEfectuado;
+	private LocalTime horaVotoFueEfectuado;
 	
 	
-	public Voto(Candidato candidatoVotado, LocalDate horaVotoFueEfectuado, Votante votante) {
+	public Voto(Candidato candidatoVotado, LocalTime horaVotoFueEfectuado, Votante votante) {
 		this.candidatoVotado = candidatoVotado;
 		this.horaVotoFueEfectuado = horaVotoFueEfectuado;
 		this.personaQueEmitioElVoto = votante;
@@ -25,7 +25,7 @@ public class Voto {
 	}
 
 
-	public LocalDate getHoraVotoFueEfectuado() {
+	public LocalTime getHoraVotoFueEfectuado() {
 		return horaVotoFueEfectuado;
 	}
 	

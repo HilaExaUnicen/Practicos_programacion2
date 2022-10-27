@@ -2,17 +2,17 @@ package practico8_Ej3;
 
 import java.util.ArrayList;
 
-public class Pais extends Elemento {
-	protected ArrayList<Elemento> elementosTerritoriales; //Cada elemento (pais, provincia, etc) tendra su propio arreglo de elementos heredado
+public class Zona extends Elemento {
+	private ArrayList<Elemento> elementosTerritoriales;
 	
-	public Pais() {
+	public Zona() {
 		this.elementosTerritoriales = new ArrayList<>();
 	}
 	
-	public void addProvincia(Provincia p) {
-		elementosTerritoriales.add(p);
+	public void addElemento(Elemento e) { //El elemento puede ser una provincia o una mesa de votacion
+		this.elementosTerritoriales.add(e);
 	}
-
+	
 	@Override
 	public ArrayList<Carta> getCartasPor(Filtro f) {
 		ArrayList<Carta> resultado = new ArrayList<>();
@@ -45,5 +45,4 @@ public class Pais extends Elemento {
 		
 		return resultadoSumaCartas;
 	}
-
 }
