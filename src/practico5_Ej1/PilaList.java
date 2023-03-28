@@ -46,7 +46,7 @@ public final class PilaList {
 	public Object[] reverse() {
 		int indiceAux = 0;
 		Object [] copiaReversa = new Object [pilaList.length];
-		for (int i = (copiaReversa.length-1);i > 0; i--) {
+		for (int i = (copiaReversa.length-1);i >= 0; i--) {
 			if(pilaList[indiceAux] != null && indiceAux < pilaList.length) {
 				copiaReversa[i] = pilaList[indiceAux];
 				indiceAux++;
@@ -70,13 +70,13 @@ public final class PilaList {
 	}
 	
 	public static void main(String[] args) {
-		PilaList nuevaPila = new PilaList();
-		Object obj1 = new Object();
-		Object obj2 = new Object();
-		Object obj3 = new Object();
-		nuevaPila.push(obj1);
-		nuevaPila.push(obj2);
-		nuevaPila.push(obj3);
+		PilaList nuevaPila = new PilaList(3);
+//		Object obj1 = new Object();
+//		Object obj2 = new Object();
+//		Object obj3 = new Object();
+		nuevaPila.push(1);
+		nuevaPila.push(2);
+		nuevaPila.push(3);
 		
 		nuevaPila.print();
 		System.out.println("---------");

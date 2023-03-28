@@ -27,73 +27,58 @@ public class MainSistemaEleccion {
 		
 		
 		
-		SeccionElectoral tandil = new SeccionElectoral();
+		ElementoCompuestoVotacion tandil = new ElementoCompuestoVotacion();
 		
 		//barrio4.addEstablecimiento(est1);
 		//barrio4.addEstablecimiento(est1);
 		
-		MesaVotacion mesa1 = new MesaVotacion();
-		MesaVotacion mesa2 = new MesaVotacion();
-		MesaVotacion mesa3 = new MesaVotacion();
-		MesaVotacion mesa4 = new MesaVotacion();
-		MesaVotacion mesa5 = new MesaVotacion();
-		MesaVotacion mesa6 = new MesaVotacion();
+		ElementoCompuestoVotacion mesa1 = new ElementoCompuestoVotacion();
+		ElementoCompuestoVotacion mesa2 = new ElementoCompuestoVotacion();
+		ElementoCompuestoVotacion mesa3 = new ElementoCompuestoVotacion();
+		ElementoCompuestoVotacion mesa4 = new ElementoCompuestoVotacion();
+		ElementoCompuestoVotacion mesa5 = new ElementoCompuestoVotacion();
+		ElementoCompuestoVotacion mesa6 = new ElementoCompuestoVotacion();
 		
-		tandil.addElemento(mesa1);
-		tandil.addElemento(mesa2);
-		tandil.addElemento(mesa3);
-		tandil.addElemento(mesa4);
-		tandil.addElemento(mesa5);
-		tandil.addElemento(mesa6);
+		tandil.addVoto(mesa1);
+		tandil.addVoto(mesa2);
+		tandil.addVoto(mesa3);
+		tandil.addVoto(mesa4);
+		tandil.addVoto(mesa5);
+		tandil.addVoto(mesa6);
 
+			
+		mesa1.addVotanteAMesa(1);
+		mesa1.addVotanteAMesa(2);
 		
-		Votante votante1 = new Votante(1);
-		Votante votante2 = new Votante(2);
-		Votante votante3 = new Votante(3);
-		Votante votante4 = new Votante(4);
-		Votante votante5 = new Votante(5);
-		Votante votante6 = new Votante(6);
-		Votante votante7 = new Votante(7);
-		Votante votante8 = new Votante(8);
-		Votante votante9 = new Votante(9);
-		Votante votante10 = new Votante(10);
-		Votante votante11= new Votante(11);
-		Votante votante12 = new Votante(12);
-		Votante votante13 = new Votante(13);
-		
-		
-		mesa1.addVotanteAMesa(votante1);
-		mesa1.addVotanteAMesa(votante2);
-		
-		mesa2.addVotanteAMesa(votante3);
-		mesa2.addVotanteAMesa(votante4);
+		mesa2.addVotanteAMesa(3);
+		mesa2.addVotanteAMesa(4);
 	
-		mesa3.addVotanteAMesa(votante5);
-		mesa3.addVotanteAMesa(votante6);
+		mesa3.addVotanteAMesa(5);
+		mesa3.addVotanteAMesa(6);
 
-		mesa4.addVotanteAMesa(votante7);
-		mesa4.addVotanteAMesa(votante8);
+		mesa4.addVotanteAMesa(7);
+		mesa4.addVotanteAMesa(8);
 		
-		mesa5.addVotanteAMesa(votante9);
-		mesa5.addVotanteAMesa(votante10);
+		mesa5.addVotanteAMesa(9);
+		mesa5.addVotanteAMesa(10);
 		
-		mesa6.addVotanteAMesa(votante11);
-		mesa6.addVotanteAMesa(votante12);
-		mesa6.addVotanteAMesa(votante13);
+		mesa6.addVotanteAMesa(11);
+		mesa6.addVotanteAMesa(12);
+		mesa6.addVotanteAMesa(13);
 		
-		Voto voto1 = new Voto(cand1, LocalTime.of(10, 0), votante1);
-		Voto voto2 = new Voto(cand2, LocalTime.of(12, 0), votante2);
-		Voto voto3 = new Voto(cand3, LocalTime.of(15, 0), votante3);
-		Voto voto4 = new Voto(cand1, LocalTime.of(17, 0), votante4);
-		Voto voto5 = new Voto(null, LocalTime.of(13, 0), votante5);
-		Voto voto6 = new Voto(cand3, LocalTime.of(14, 0), votante6);
-		Voto voto7 = new Voto(cand5, LocalTime.of(12, 0), votante7);
-		Voto voto8 = new Voto(cand2, LocalTime.of(10, 0), votante8);
-		Voto voto9 = new Voto(cand5, LocalTime.of(10, 0), votante9);
-		Voto voto10 = new Voto(cand3, LocalTime.of(10, 0), votante10);
-		Voto voto11 = new Voto(cand3, LocalTime.of(10, 0), votante11);
-		Voto voto12 = new Voto(cand1, LocalTime.of(10, 0), votante12);
-		Voto voto13 = new Voto(cand1, LocalTime.of(10, 0), votante13);
+		Voto voto1 = new Voto(cand1, LocalTime.of(10, 0), 1);
+		Voto voto2 = new Voto(cand2, LocalTime.of(12, 0), 2);
+		Voto voto3 = new Voto(cand3, LocalTime.of(15, 0), 3);
+		Voto voto4 = new Voto(cand1, LocalTime.of(17, 0), 4);
+		Voto voto5 = new Voto(null, LocalTime.of(13, 0), 5);
+		Voto voto6 = new Voto(cand3, LocalTime.of(14, 0), 6);
+		Voto voto7 = new Voto(cand5, LocalTime.of(12, 0), 7);
+		Voto voto8 = new Voto(cand2, LocalTime.of(10, 0), 8);
+		Voto voto9 = new Voto(cand5, LocalTime.of(10, 0), 9);
+		Voto voto10 = new Voto(cand3, LocalTime.of(10, 0), 10);
+		Voto voto11 = new Voto(cand3, LocalTime.of(10, 0), 11);
+		Voto voto12 = new Voto(cand1, LocalTime.of(10, 0), 12);
+		Voto voto13 = new Voto(cand1, LocalTime.of(10, 0), 13);
 		
 		mesa1.addVoto(voto1);
 		mesa1.addVoto(voto2);
@@ -116,7 +101,7 @@ public class MainSistemaEleccion {
 		
 		System.out.println(tandil.getCantVotosPor(new FiltroVotosPorCandidato(cand1)));
 		System.out.println(mesa6.getCantVotosPor(new FiltroPorVotosEnBlanco()));
-		System.out.println(mesa6.getPorcentajeVotosPor(new FiltroVotosPorCandidato(cand1)));
+		System.out.println(mesa6.getPorcentajeVotosPor(new FiltroVotosPorCandidato(cand3)));
 		
 		System.out.println(elec.getCandidatos());
 		

@@ -5,16 +5,11 @@ import java.util.ArrayList;
 
 public class Archivo extends ElementoSistemaArchivos {
 	
-	private LocalDate fechaUltimaModificacion;
 	private int tamanio;
 	
 	public Archivo(String nombre, LocalDate fechaCreacion, LocalDate fechaUltimaModificacion, int tamanio) {
 		super(nombre, fechaCreacion, fechaUltimaModificacion);
 		this.tamanio = tamanio;
-	}
-
-	public LocalDate getFechaUltimaModificacion() {
-		return fechaUltimaModificacion;
 	}
 
 	public int getTamanio() {
